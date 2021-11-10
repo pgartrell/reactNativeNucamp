@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Home from "./HomeComponent"
 import Directory from './DirectoryComponent';
-import CampsiteInfo from './CanpsiteInfoComponent';
-import { Constants } from 'expo-constants';
+import CampsiteInfo from './CampsiteInfoComponent';
+import  Constants  from 'expo-constants';
 import {View, Platform} from 'react-native';
 import {createStackNavigator} from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
@@ -66,7 +66,7 @@ class Main extends Component{
 
         render() {
             return(
-                 <View 
+                <View 
                  style={{
                      flex: 1,
                      paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight //conditional code for ios phones
